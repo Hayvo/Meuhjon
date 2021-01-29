@@ -10,6 +10,17 @@ int plateau::getNy()
     return ny;
 }
 
+void plateau::resetBg()
+{
+    for(int i = 0; i < nx; i++)
+    {
+        for(int j = 0; j < ny; j++)
+        {
+            bg[i][j] = 0;
+        }
+    }
+}
+
 void plateau::setCase(int i, int j, int p)
 {
     bg[i][j] = p;
@@ -94,32 +105,6 @@ void couloir::setU2(int u2_)
     u2 = u2_;
 }
 
-void plateau::level1()
-{
-    piece piece1;
-    piece piece2;
-    couloir couloir1;
-
-    piece1.setX1(2);
-    piece1.setY1(2);
-    piece1.setX2(12);
-    piece1.setY2(7);
-
-    couloir1.setC(6);
-    couloir1.setU1(7);
-    couloir1.setU2(11);
-    couloir1.setType('h');
-
-    piece2.setX1(4);
-    piece2.setY1(11);
-    piece2.setX2(12);
-    piece2.setY2(19);
-
-    f_piece(piece1);
-    f_piece(piece2);
-    f_couloir(couloir1);
-
-}
 
 void plateau::f_couloir(couloir corridor)
 // h_or_v indique si le couloir est horizontal ou vertical, u1 et u2 le début et la fin du couloir sur la coordonnée dynamique du couloir (y pour horizontale)
@@ -181,3 +166,30 @@ void plateau::f_piece(piece room)
     }
 }
 
+void plateau::level1()
+{
+    resetBg();
+    piece piece1;
+    piece piece2;
+    couloir couloir1;
+
+    piece1.setX1(2);
+    piece1.setY1(2);
+    piece1.setX2(12);
+    piece1.setY2(7);
+
+    couloir1.setC(6);
+    couloir1.setU1(7);
+    couloir1.setU2(11);
+    couloir1.setType('h');
+
+    piece2.setX1(4);
+    piece2.setY1(11);
+    piece2.setX2(12);
+    piece2.setY2(19);
+
+    f_piece(piece1);
+    f_piece(piece2);
+    f_couloir(couloir1);
+
+}

@@ -1,7 +1,6 @@
 #include <iostream>
 #include "./personnage.h"
-#include "./heros.h"
-#include "./plateau.h"
+#include "./hero.h"
 
 class ennemi : public personnage {
 

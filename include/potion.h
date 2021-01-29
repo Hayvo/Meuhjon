@@ -2,6 +2,8 @@
 #include <iostream>
 #include "./personnage.h"
 
+class hero;
+
 class potion {
 
 public:
@@ -10,8 +12,7 @@ public:
 
     std::string get_name();
 
-
-    void recevoir_potion(personnage perso);
+    void recevoir_potion(hero* phero);
 
 private:
 
