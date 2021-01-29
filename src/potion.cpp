@@ -11,7 +11,7 @@ std::string potion::get_name(){
 }
 
 void potion::recevoir_potion(hero* phero){
-    *phero.rajoute_force(m_ajout_force);
-    *phero.rajoute_vie(m_ajout_pv);
+    phero->rajoute_force(m_ajout_force);
+    phero->rajoute_vie(m_ajout_pv);
 
 }
