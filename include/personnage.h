@@ -9,6 +9,7 @@ class personnage {
 public:
 
     personnage(int pv, int force, std::array<int, 2> pos, plateau bg);
+    personnage(){};
 
     bool get_m_mort();
 
