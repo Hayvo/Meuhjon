@@ -10,6 +10,17 @@ int plateau::getNy()
     return ny;
 }
 
+void plateau::resetBg()
+{
+    for(int i = 0; i < nx; i++)
+    {
+        for(int j = 0; j < ny; j++)
+        {
+            bg[i][j] = 0;
+        }
+    }
+}
+
 void plateau::setCase(int i, int j, int p)
 {
     bg[i][j] = p;

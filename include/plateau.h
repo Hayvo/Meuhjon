@@ -77,5 +77,7 @@ class plateau
         void level2();
         void level3();
 
+        void resetBg();
+
 };
 

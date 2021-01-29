@@ -1,6 +1,6 @@
 #include <iostream>
 #include "./personnage.h"
-#include "./heros.h"
+#include "./hero.h"
 
 class ennemi : public personnage {
 
@@ -8,5 +8,5 @@ public:
 
     ennemi();
 
-    void deplacerVersHeros(heros* heros);
+    void deplacerVersHeros(hero* heros);
 };
