@@ -40,11 +40,17 @@ void displayer::display_bg(plateau p)
       {
           move(i,j);
           int m = p.bg[i][j];
-          if(m == 1 or m == 0)
+          if(m == 0)
           {
             attron(COLOR_PAIR(6));
-            addch('.');
+            addch(' ');
             attroff(COLOR_PAIR(6));
+          }
+          if(m == 1)
+          {
+            attron(COLOR_PAIR(2));
+            addch('.');
+            attroff(COLOR_PAIR(2));
           }
           if(m == 2)
           {

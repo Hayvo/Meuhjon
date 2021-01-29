@@ -1,6 +1,8 @@
 #include "../include/personnage.h"
+#include "../include/plateau.h"
 
 #include <array>
+
 
 bool personnage::get_m_mort() 
 {
