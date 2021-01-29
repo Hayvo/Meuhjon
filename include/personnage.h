@@ -2,13 +2,15 @@
 #include <iostream>
 #include <string>
 #include <array>
+#include "./plateau.h"
 
 class personnage {
 
 public:
 
     personnage();
-    personnage(int pv, int force);
+
+    personnage(int pv, int force, plateau bg);
 
     bool get_m_mort();
 
@@ -24,11 +26,13 @@ public:
 
     void deplacer(std::array<int, 2> dx);
 
+    bool positionValide(int x, int y);
+
 protected:
 
     int m_pv; //    Points de vie
     int m_force; // Puissance personnage     
     std::array<int, 2> m_pos;  //     Position
     bool m_mort; //    Vivant ou mort
-
+    plateau m_bg;
 };

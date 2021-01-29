@@ -12,12 +12,12 @@ std::array<int,2> personnage::get_m_pos()
     return m_pos;
 }
 
-personnage::personnage(int pv, int force) {
+personnage::personnage(int pv, int force, plateau bg) {
     m_pv = pv;
     m_force = force;
     m_pos[0] = 0; m_pos[1] = 0;
     m_mort = false;
-
+    m_bg = bg;
 }
 
 personnage::personnage() { //   Initialisation des attributs
@@ -59,7 +59,7 @@ void personnage::deplacer(std::array<int, 2> dx)
         int new_x = m_pos[0] + dx[0]; //  Actualisation coordonnées
         int new_y = m_pos[1] + dx[1];
 
-        if (false ) 
+        if ( positionValide(new_x, new_y) ) 
         { // Si déplacement possible
             m_pos[0] = new_x;
             m_pos[1] = new_y;
@@ -86,4 +86,14 @@ void personnage::rajoute_force(int bonus)
 {
 
     m_force += bonus;
+}
+
+bool personnage::positionValide(int x, int y) {
+
+    if ( m_bg.getCase(x, y) != 2 ) {
+        return false;
+    }
+    else {
+        return true;
+    }
 }

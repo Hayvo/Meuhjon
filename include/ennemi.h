@@ -6,9 +6,11 @@ class ennemi : public personnage {
 
 public:
 
-    ennemi(int pv, int force, piece salle) : personnage(pv,force), m_piece(salle){};
+    ennemi(int pv, int force, plateau bg, piece salle) : personnage(pv,force, bg), m_piece(salle){};
+
+    void placeAlea();
     
-    void deplacerVersHeros(heros* heros);
+    void deplacerVersHeros(hero* heros);
 
 private:
 
