@@ -30,6 +30,16 @@ int main() {
             }
             cout << " " << endl;
         }
-
+        int n;
+        cin >> n;
+        p.resetBg();
+        for(int i = 0; i < p.getNx(); i++)
+        {
+            for(int j = 0; j < p.getNy(); j++)
+            {
+                cout << p.bg[i][j];
+            }
+            cout << " " << endl;
+        }
     return 0;
 }

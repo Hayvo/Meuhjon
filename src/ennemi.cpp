@@ -1,11 +1,13 @@
 #include "../include/ennemi.h"
 
-ennemi::ennemi() {
+ennemi::ennemi() 
+{
     m_pv = 50;
     m_force = 5;
 }
 
-void ennemi::deplacerVersHeros(heros* heros) {
+void ennemi::deplacerVersHeros(heros* heros) 
+{
 
     std::array<int, 2> dx = {0, 0};
     std::array<int, 2> herosPos;
@@ -14,22 +16,28 @@ void ennemi::deplacerVersHeros(heros* heros) {
     int delta_x = herosPos[0] - m_pos[0];
     int delta_y = herosPos[0] - m_pos[0];
 
-    if ( delta_x*delta_x > delta_y*delta_y ) { //   Si la longueur horizontale est plus grande que la verticale
+    if ( delta_x*delta_x > delta_y*delta_y ) 
+    { //   Si la longueur horizontale est plus grande que la verticale
 
-        if (delta_x < 0) {
+        if (delta_x < 0) 
+        {
             dx[0] = -1;
         }
-        else {
+        else 
+        {
             dx[0] = 1;
         }
 
     }
-    else {
+    else 
+    {
 
-        if (delta_y < 0) {
+        if (delta_y < 0) 
+        {
             dx[1] = -1;
         }
-        else {
+        else 
+        {
             dx[1] = 1;
         }
     }
