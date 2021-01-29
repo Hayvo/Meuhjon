@@ -14,6 +14,5 @@ public:
     void deplacerVersHeros(hero* heros);
 
 private:
-
     piece m_piece;
 };
