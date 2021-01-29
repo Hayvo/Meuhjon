@@ -11,7 +11,7 @@ void hero::ajoute_potion(potion potion){
 
 std::string hero::afficher_inventaire(){
     std::string inv;
-    for (int i = 0; i<m_inventaire.size(); i++){ //rajouter une methode size ?
+    for (int i = 0; i<m_inventaire.size(); i++){
         inv += m_inventaire[i].get_name() ;
         inv += ", " ;
     }
