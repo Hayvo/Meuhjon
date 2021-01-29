@@ -1,6 +1,8 @@
 #include <iostream>
 #include "./include/plateau.h"
 
+
+
 using namespace std;
 int main() {
 
@@ -19,17 +21,15 @@ int main() {
         //Test fin de jeu
     
         plateau p;
-
-    p.f_piece( 2, 6, 3, 8);
-    p.f_couloir('h', 5, 8, 12);
-    for (int i = 0 ; i < 20 ; i++)
-    {
-        for (int j = 0 ; j < 20 ; j++)
+        p.level1();
+        for(int i = 0; i < p.getNx(); i++)
         {
-            cout<<p.getCase(i,j);
+            for(int j = 0; j < p.getNy(); j++)
+            {
+                cout << p.bg[i][j];
+            }
+            cout << " " << endl;
         }
-        cout<<endl;
-    }
 
     return 0;
 }

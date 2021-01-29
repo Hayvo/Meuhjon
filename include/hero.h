@@ -18,5 +18,5 @@ public:
     void choisir_inventaire(std::string name); // applique la methode recevoir potion de la classe potion
 
 protected:
-    std::vector<potion> m_inventaire ;
+    std::vector<potion> m_inventaire;
 };
