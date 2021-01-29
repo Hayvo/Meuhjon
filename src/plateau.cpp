@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "../include/plateau.h"
 
 int plateau::getNx()
@@ -73,25 +72,3 @@ void plateau::level1()
    piece2.setY2(19);
 }
 
-=======
-#include "../include/plateau.h"
-
-int plateau::getNx()
-{
-    return nx;
-}
-
-int plateau::getNy()
-{
-    return ny;
-}
-
-vector<vector<int>> plateau::getBg()
-{
-    return bg;
-}
-
-void plateau::setBgTest() {
-    
-}
->>>>>>> 1c04ca80a9a9b6ee8d19166d8e7cc5a0deea7609
