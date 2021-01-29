@@ -19,6 +19,8 @@ class plateau
         int getNx();
         int getNy();
 
+        void setBgTest();
+
         void level1();
         void level2();
         void level3();
