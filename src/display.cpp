@@ -71,7 +71,8 @@ refresh();
 
 void displayer::display_hero(hero h)
 {
-  move(h.m_pos[0],h.m_pos[1]);
+  array<int, 2> m_pos = h.get_m_pos();
+  move(m_pos[0],m_pos[1]);
   attron(COLOR_PAIR(3));
   addch('@');
   attroff(COLOR_PAIR(3));
@@ -80,7 +81,8 @@ void displayer::display_hero(hero h)
 
 void displayer::display_ennemi(ennemi e)
 {
-  move(e.m_pos[0],e.m_pos[1]);
+  array<int, 2> m_pos = e.get_m_pos();
+  move(m_pos[0],m_pos[1]);
   attron(COLOR_PAIR(3));
   addch('M');
   attroff(COLOR_PAIR(3));
@@ -99,7 +101,8 @@ void displayer::display_ennemi(ennemi e)
 
 void displayer::remove_hero(hero h)
 {
-  move(h.m_pos[0],h.m_pos[1]);
+  array<int, 2> m_pos = h.get_m_pos();
+  move(m_pos[0],m_pos[1]);
   attron(COLOR_PAIR(0));
   addch('.');
   attroff(COLOR_PAIR(0));
@@ -108,7 +111,8 @@ void displayer::remove_hero(hero h)
 
 void displayer::remove_ennemi(ennemi e)
 {
-  move(e.m_pos[0],e.m_pos[1]);
+  array<int, 2> m_pos = e.get_m_pos();
+  move(m_pos[0],m_pos[1]);
   attron(COLOR_PAIR(0));
   addch('.');
   attroff(COLOR_PAIR(0));

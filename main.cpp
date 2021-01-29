@@ -8,6 +8,6 @@ int main() {
     displayer disp;
     plateau p;
     p.level1();
-    disp.display(p);
+    disp.display_bg(p);
     return 0;
 }
