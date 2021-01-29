@@ -1,8 +1,35 @@
 #include "../include/personnage.h"
 
-personnage::personnage() {
+bool personnage::get_m_mort() {
+    return m_mort;
+}
 
-    pv = 100;
-    force = 5;
-    pos[0] = 0; pos[1] = 0;
+std::vector<int> personnage::get_m_pos() {
+    return pos;
+}
+
+personnage::personnage(std::string name) { //   Initialisation des attributs
+
+    m_pv = 100;
+    m_force = 5;
+    m_pos[0] = 0; m_pos[1] = 0;
+    m_mort = false;
+}
+
+void personnage::attaquer(personnage* cible) {
+
+    int degats;
+    degats = force; //  Calcul des dégats
+    cible.recevoir_degats(degats);
+}
+
+void personnage::recevoir_degats(int degats) {
+    
+    if (degats > pv) { //   Si estocade
+        m_pv = 0;
+        m_mort = true; //   Personnage mort
+    }
+    else { //  Sinon reçoit les dégats
+        m_pv -= degats;
+    }
 }
