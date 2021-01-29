@@ -12,7 +12,6 @@ public:
 
     std::string get_name();
 
-
     void recevoir_potion(hero* phero);
 
 private:
