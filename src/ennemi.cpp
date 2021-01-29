@@ -1,6 +1,9 @@
 #include "../include/ennemi.h"
+#include "../include/plateau.h"
 
-ennemi::ennemi(int pv, int force, std::array<int, 2> pos, plateau bg, piece salle){
+ennemi::ennemi(int pv, int force, std::array<int, 2> pos, plateau bg, piece salle)
+{
+    
 }
 
 void ennemi::placeAlea()

@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
-./plateau.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
-./potion.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/potion.h
-./hero.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
-./ennemi.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
-./personnage.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/personnage.h
-
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
 iostream
 -
@@ -64,37 +52,9 @@ iostream
 ./plateau.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
 
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/main.cpp
-iostream
--
-./include/plateau.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
-./include/display.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
-
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/display.cpp
-ncurses.h
--
-iostream
--
-stdlib.h
--
-../include/plateau.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
-../include/display.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
-
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/ennemi.cpp
 ../include/ennemi.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
-
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/hero.cpp
-../include/hero.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
-
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/potion.cpp
-../include/potion.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/potion.h
-../include/hero.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
+../include/plateau.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
 
