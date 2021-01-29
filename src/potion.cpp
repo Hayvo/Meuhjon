@@ -1,5 +1,5 @@
 #include "../include/potion.h" 
-#include "../include/heros.h"
+#include "../include/hero.h"
 
 
 potion::potion(std::string nom_potion, uint8_t ajout_pv, uint8_t ajout_force) : m_ajout_pv(ajout_pv), m_ajout_force(ajout_force), m_name(nom_potion){
