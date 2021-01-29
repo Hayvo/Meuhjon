@@ -1,9 +1,7 @@
 #include "../include/ennemi.h"
 
-ennemi::ennemi() 
-{
-    m_pv = 50;
-    m_force = 5;
+ennemi::ennemi() {
+    
 }
 
 void ennemi::deplacerVersHeros(hero* heros) 

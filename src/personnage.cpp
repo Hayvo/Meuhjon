@@ -12,8 +12,15 @@ std::array<int,2> personnage::get_m_pos()
     return m_pos;
 }
 
-personnage::personnage() 
-{ //   Initialisation des attributs
+personnage::personnage(int pv, int force) {
+    m_pv = pv;
+    m_force = force;
+    m_pos[0] = 0; m_pos[1] = 0;
+    m_mort = false;
+
+}
+
+personnage::personnage() { //   Initialisation des attributs
 
     m_pv = 100;
     m_force = 5;
