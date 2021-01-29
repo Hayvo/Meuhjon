@@ -7,6 +7,16 @@ using namespace std;
 
 class piece
 {
+    public:
+    piece(){};
+    piece (const piece &p)
+    {
+        x1 = p.x1;
+        x2 = p.x2;
+        y1 = p.y1;
+        y2 = p.y2;
+
+    }
     protected:
         int x1;
         int x2;

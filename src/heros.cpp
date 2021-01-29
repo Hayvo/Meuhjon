@@ -21,7 +21,7 @@ void heros::choisir_inventaire(std::string name){
     for (int i=0; i<m_inventaire.size(); i++){
         std::string nom_potion = m_inventaire[i].get_name();
         if (nom_potion == name){
-            m_inventaire[i].recevoir_potion(heros);
+            //m_inventaire[i].recevoir_potion(heros);
         }
     }
 }
