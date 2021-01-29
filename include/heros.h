@@ -6,13 +6,9 @@ class heros : public personnage {
 
 public:
 
-    heros() {
-
-    };
+    heros();
 
 
 protected:
-
-inventaire;
 
 };

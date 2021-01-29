@@ -17,5 +17,5 @@ protected:
 
 uint8_t m_pv; //    Points de vie
 uint8_t m_force; // Puissance personnage     
-int pos[2];  //     Position
+std::vector<int> pos;  //     Position
 };
