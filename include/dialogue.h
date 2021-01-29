@@ -12,5 +12,6 @@ class dialogue{
 
     private:
         std::string m_message;
+        bool m_affichage = false;
 
 };
