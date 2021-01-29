@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/dialogue.h
-stdlib.h
--
-iostream
--
-
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
 ./plateau.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
@@ -67,6 +61,8 @@ iostream
 -
 ./personnage.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/personnage.h
+./plateau.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
 
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/main.cpp
 iostream
@@ -75,10 +71,6 @@ iostream
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
 ./include/display.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
-
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/dialogue.cpp
-../include/dialogue.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/dialogue.h
 
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/display.cpp
 ncurses.h
@@ -99,14 +91,6 @@ stdlib.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/hero.cpp
 ../include/hero.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
-
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/personnage.cpp
-../include/personnage.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/personnage.h
-../include/plateau.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
-array
--
 
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/potion.cpp
 ../include/potion.h
