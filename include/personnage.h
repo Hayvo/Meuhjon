@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <array>
 
 class personnage {
 
@@ -10,19 +11,19 @@ public:
 
     bool get_m_mort();
 
-    std::vector<int> get_m_pos();
+    std::array<int, 2> get_m_pos();
 
     void recevoir_degats(int degats);
 
-    void attaquer (personnage* cible);
+    void attaquer(personnage* cible);
 
-    void deplacer(std::vector<int> dx);
+    void deplacer(std::array<int, 2> dx);
 
 protected:
 
 uint8_t m_pv; //    Points de vie
 uint8_t m_force; // Puissance personnage     
-std::vector<int> m_pos;  //     Position
-std::string m_name; //    Nom du personnage
+std::array<int, 2> m_pos;  //     Position
 bool m_mort; //    Vivant ou mort
+
 };

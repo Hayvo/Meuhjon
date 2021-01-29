@@ -15,3 +15,6 @@ vector<vector<int>> plateau::getBg()
     return bg;
 }
 
+void plateau::setBgTest() {
+    
+}

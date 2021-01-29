@@ -18,6 +18,8 @@ class plateau
         int getNy();
         vector<vector<int>> getBg();
 
+        void setBgTest();
+
         void level1();
         void level2();
         void level3();
