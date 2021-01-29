@@ -33,3 +33,20 @@ void personnage::recevoir_degats(int degats) {
         m_pv -= degats;
     }
 }
+
+void personnage::deplacer(std::vector<int> dx) {
+
+    if ( (dx[0] < -1) and (dx[0] > 1) and (dx[1] < -1) and (dx[1] > 1) ) { //   Vérification de la convention
+
+        new_x = pos[0] + dx[0]; //  Actualisation coordonnées
+        new_y = pos[1] + dx[1];
+
+        if ( ??? ) { // Si déplacement possible
+            pos[0] = new_x;
+            pos[1] = new_y;
+        }
+    }
+    else {
+        std::cerr << "Problème dans la convention de déplacement !" << std::endl;
+    }
+}

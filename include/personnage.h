@@ -16,6 +16,8 @@ public:
 
     void attaquer (personnage* cible);
 
+    void deplacer(std::vector<int> dx);
+
 protected:
 
 uint8_t m_pv; //    Points de vie
