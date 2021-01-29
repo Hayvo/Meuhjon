@@ -15,7 +15,7 @@ public:
 
     void recevoir_degats(int degats);
 
-    void attaquer(personnage* cible);
+    void attaquer(personnage &cible);
 
     void deplacer(std::array<int, 2> dx);
 

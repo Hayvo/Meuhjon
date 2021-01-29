@@ -10,7 +10,7 @@ std::array<int,2> personnage::get_m_pos() {
     return m_pos;
 }
 
-personnage::personnage(std::string name) { //   Initialisation des attributs
+personnage::personnage() { //   Initialisation des attributs
 
     m_pv = 100;
     m_force = 5;
@@ -18,16 +18,16 @@ personnage::personnage(std::string name) { //   Initialisation des attributs
     m_mort = false;
 }
 
-void personnage::attaquer(personnage* cible) {
+void personnage::attaquer(personnage &cible) {
 
     int degats;
-    degats = force; //  Calcul des dégats
+    degats = m_force; //  Calcul des dégats
     cible.recevoir_degats(degats);
 }
 
 void personnage::recevoir_degats(int degats) {
     
-    if (degats > pv) { //   Si estocade
+    if (degats > m_pv) { //   Si estocade
         m_pv = 0;
         m_mort = true; //   Personnage mort
     }
@@ -36,16 +36,16 @@ void personnage::recevoir_degats(int degats) {
     }
 }
 
-void personnage::deplacer(std::vector<int> dx) {
+void personnage::deplacer(std::array<int, 2> dx) {
 
     if ( (dx[0] < -1) and (dx[0] > 1) and (dx[1] < -1) and (dx[1] > 1) ) { //   Vérification de la convention
 
-        new_x = pos[0] + dx[0]; //  Actualisation coordonnées
-        new_y = pos[1] + dx[1];
+        int new_x = m_pos[0] + dx[0]; //  Actualisation coordonnées
+        int new_y = m_pos[1] + dx[1];
 
-        if ( ??? ) { // Si déplacement possible
-            pos[0] = new_x;
-            pos[1] = new_y;
+        if (false ) { // Si déplacement possible
+            m_pos[0] = new_x;
+            m_pos[1] = new_y;
         }
     }
     else {

@@ -12,5 +12,5 @@ void ennemi::deplacerAlea() {
     dx[0] = rand()%(1) - rand()%(1);
     dx[0] = rand()%(1) - rand()%(1);    
 
-    ennemi.deplacer(dx);
+    deplacer(dx);
 }
