@@ -5,11 +5,11 @@
 #include <string>
 #include "./potion.h"
 
-class heros : public personnage {
+class hero : public personnage {
 
 public:
 
-    heros() ;
+    hero() ;
 
     void ajoute_potion(potion potion) ;
 
