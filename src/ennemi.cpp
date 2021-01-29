@@ -6,7 +6,7 @@ ennemi::ennemi()
     m_force = 5;
 }
 
-void ennemi::deplacerVersHeros(heros* heros) 
+void ennemi::deplacerVersHeros(hero* heros) 
 {
 
     std::array<int, 2> dx = {0, 0};
