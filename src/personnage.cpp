@@ -14,7 +14,7 @@ std::array<int,2> personnage::get_m_pos()
     return m_pos;
 }
 
-personnage::personnage(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos) : m_pv(pv), m_force(force), m_pos(pos), m_mort(false),m_name(nom_perso){
+personnage::personnage(int pv, int force, std::array<int, 2> pos, plateau bg) : m_pv(pv), m_force(force), m_pos(pos), m_mort(false), m_bg(bg){
 
 }
 

@@ -9,7 +9,7 @@ class hero : public personnage {
 
 public:
 
-    hero(std::array<int, 2> pos):personnage(std::string m_name, uint8_t 150, uint8_t 20, std::array<int, 2> pos){};
+    hero(std::array<int, 2> pos, plateau bg):personnage(150, 20, pos, bg){};
 
     void ajoute_potion(potion potion);
 

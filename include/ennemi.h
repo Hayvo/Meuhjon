@@ -7,7 +7,7 @@ class ennemi : public personnage {
 
 public:
 
-    ennemi(int pv, int force, plateau bg, piece salle) : personnage(pv,force, bg), m_piece(salle){};
+    ennemi(int pv, int force, std::array<int, 2> pos, plateau bg, piece salle) : personnage(pv,force,pos,bg), m_piece(salle){};
 
     void placeAlea();
     
