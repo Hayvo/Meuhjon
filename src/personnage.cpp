@@ -52,3 +52,17 @@ void personnage::deplacer(std::array<int, 2> dx) {
         std::cerr << "Problème dans la convention de déplacement !" << std::endl;
     }
 }
+
+void personnage::rajoute_vie(int bonus) {
+
+    m_pv += bonus;
+    if (m_pv > 100) {   //  Santé maximale
+        m_pv = 100;
+    }
+}
+
+
+void personnage::rajoute_force(int bonus) {
+
+    m_force += bonus;
+}
