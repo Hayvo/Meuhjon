@@ -12,7 +12,7 @@ class displayer
             BLUE = 2,
             GREEN = 3,
             CYAN = 4,
-            YELLOW = 5
+            YELLOW = 5,
         };
 
     public:

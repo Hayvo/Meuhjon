@@ -50,8 +50,8 @@ class couloir
 class plateau
 {
     private:
-        static const int nx = 50;
-        static const int ny = 50;
+        static const int nx = 20;
+        static const int ny = 20;
 
     public:
     void f_piece(piece room);

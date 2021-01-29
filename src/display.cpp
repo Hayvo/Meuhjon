@@ -1,4 +1,3 @@
-#pragma once
 
 #include <ncurses.h>
 #include <iostream>
@@ -33,16 +32,41 @@ void displayer::init_color()
 
 void displayer::display(plateau p)
 {
-    init();
-    for(int i = 0; i < p.getNx(); i++)
-    {
-        for(int j = 0; j < p.getNy(); j++)
-        {
+  init();
+  
+  for(int i = 0; i < p.getNx(); i++)
+  {
+      for(int j = 0; j < p.getNy(); j++)
+      {
+          move(i,j);
+          int m = p.bg[i][j];
+          if(m == 1 or m == 0)
+          {
+            attron(COLOR_PAIR(6));
+            addch('.');
+            attroff(COLOR_PAIR(6));
+          }
+          if(m == 2)
+          {
+            attron(COLOR_PAIR(0));
+            addch('.');
+            attroff(COLOR_PAIR(0));
+          }
+          if(m == 3)
+          {
+            attron(COLOR_PAIR(4));
+            addch('.');
+            attroff(COLOR_PAIR(4));
+          }
+          if(m == 4)
+          {
             attron(COLOR_PAIR(1));
-            move(i,j);
-            addch(p.bg[i][j]);
+            addch('.');
             attroff(COLOR_PAIR(1));
-        }
-    }
+          }
+      }
+  }
+refresh();
+ 
 }
 
