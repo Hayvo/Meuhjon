@@ -10,6 +10,11 @@ int plateau::getNy()
     return ny;
 }
 
+void plateau::setCase(int i, int j, int p)
+{
+    bg[i][j] = p;
+}
+
 void piece::setX1(int i)
 {
     x1 = i;

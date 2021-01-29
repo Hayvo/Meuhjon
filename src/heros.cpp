@@ -2,7 +2,7 @@
 
 
 heros::heros(){
-    m_inventaire = std::vector<potion> ;
+    std::vector<potion> m_inventaire  ;
 }
 
 void heros::ajoute_potion(potion potion){

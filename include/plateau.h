@@ -71,6 +71,7 @@ class plateau
         int getCase(int i, int j);
 
         void setBgTest();
+        void setCase(int i, int j, int p);
 
         void level1();
         void level2();
