@@ -10,10 +10,12 @@ class heros : public personnage {
 public:
 
     heros() ;
-    void initialise_inventaire() ;
-    void ajoute_potion() ;
-    void afficher_invetaire() ;
-    void choisir_inventaire(); // applique la methode recevoir potion de la classe potion
+
+    void ajoute_potion(potion potion) ;
+
+    std::string afficher_inventaire() ;
+
+    void choisir_inventaire(std::string name); // applique la methode recevoir potion de la classe potion
 
 
 
