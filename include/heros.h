@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "./potion.h""
+#include "./potion.h"
 
 class heros : public personnage {
 
@@ -16,9 +16,6 @@ public:
     std::string afficher_inventaire() ;
 
     void choisir_inventaire(std::string name); // applique la methode recevoir potion de la classe potion
-
-
-
 
 protected:
     std::vector<potion> m_inventaire ;
