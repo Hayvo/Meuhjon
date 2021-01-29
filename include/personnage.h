@@ -1,13 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
-#include <vector>
-
-using namespace std;
-=======
 #include <array>
->>>>>>> 1c04ca80a9a9b6ee8d19166d8e7cc5a0deea7609
 
 class personnage {
 

@@ -5,5 +5,7 @@ class ennemi : public personnage {
 
 public:
 
+    ennemi();
+
     void deplacerAlea();
 };
