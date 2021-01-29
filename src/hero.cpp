@@ -1,7 +1,7 @@
 #include "../include/hero.h" 
 
 
-hero::hero()
+hero::hero(std::array<int, 2> pos)
 {
 
 }
