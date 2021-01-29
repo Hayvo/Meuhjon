@@ -9,9 +9,9 @@ class hero : public personnage {
 
 public:
 
-    hero() ;
+    hero(std::array<int, 2> pos):personnage(std::string m_name, uint8_t 150, uint8_t 20, std::array<int, 2> pos){};
 
-    void ajoute_potion(potion potion) ;
+    void ajoute_potion(potion potion);
 
     std::string afficher_inventaire() ;
 

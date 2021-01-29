@@ -1,6 +1,8 @@
 #include "../include/personnage.h"
+#include "../include/plateau.h"
 
 #include <array>
+
 
 bool personnage::get_m_mort() 
 {
@@ -12,20 +14,17 @@ std::array<int,2> personnage::get_m_pos()
     return m_pos;
 }
 
+<<<<<<< HEAD
+personnage::personnage(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos) : m_pv(pv), m_force(force), m_pos(pos), m_mort(false),m_name(nom_perso){
+
+=======
 personnage::personnage(int pv, int force, plateau bg) {
     m_pv = pv;
     m_force = force;
     m_pos[0] = 0; m_pos[1] = 0;
     m_mort = false;
     m_bg = bg;
-}
-
-personnage::personnage() { //   Initialisation des attributs
-
-    m_pv = 100;
-    m_force = 5;
-    m_pos[0] = 0; m_pos[1] = 0;
-    m_mort = false;
+>>>>>>> fcb0b04dc553a5d905a6a0902d0a899f0a0735a8
 }
 
 void personnage::attaquer(personnage &cible) 

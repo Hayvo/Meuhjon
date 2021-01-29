@@ -8,9 +8,7 @@ class personnage {
 
 public:
 
-    personnage();
-
-    personnage(int pv, int force, plateau bg);
+    personnage(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos);
 
     bool get_m_mort();
 

@@ -1,5 +1,7 @@
 #include "../include/ennemi.h"
 
+ennemi::ennemi(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos, piece salle)
+{
 void ennemi::placeAlea()
 {
     
@@ -12,7 +14,7 @@ void ennemi::placeAlea()
     }
 }
 
-void ennemi::deplacerVersHeros(hero* heros) 
+void ennemi::deplacerVersHeros(hero* hero) 
 {
 
     std::array<int, 2> dx = {0, 0};
