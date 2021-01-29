@@ -12,8 +12,17 @@ std::array<int,2> personnage::get_m_pos()
     return m_pos;
 }
 
+<<<<<<< HEAD
 personnage::personnage(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos) : m_pv(pv), m_force(force), m_pos(pos), m_mort(false),m_name(nom_perso){
 
+=======
+personnage::personnage(int pv, int force, plateau bg) {
+    m_pv = pv;
+    m_force = force;
+    m_pos[0] = 0; m_pos[1] = 0;
+    m_mort = false;
+    m_bg = bg;
+>>>>>>> fcb0b04dc553a5d905a6a0902d0a899f0a0735a8
 }
 
 void personnage::attaquer(personnage &cible) 
@@ -47,7 +56,7 @@ void personnage::deplacer(std::array<int, 2> dx)
         int new_x = m_pos[0] + dx[0]; //  Actualisation coordonnées
         int new_y = m_pos[1] + dx[1];
 
-        if (false ) 
+        if ( positionValide(new_x, new_y) ) 
         { // Si déplacement possible
             m_pos[0] = new_x;
             m_pos[1] = new_y;
@@ -74,4 +83,14 @@ void personnage::rajoute_force(int bonus)
 {
 
     m_force += bonus;
+}
+
+bool personnage::positionValide(int x, int y) {
+
+    if ( m_bg.getCase(x, y) != 2 ) {
+        return false;
+    }
+    else {
+        return true;
+    }
 }

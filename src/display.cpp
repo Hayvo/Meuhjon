@@ -30,7 +30,7 @@ void displayer::init_color()
   }
 }
 
-void displayer::display(plateau p)
+void displayer::display_bg(plateau p)
 {
   init();
   
@@ -67,6 +67,55 @@ void displayer::display(plateau p)
       }
   }
 refresh();
- 
+}
+
+void displayer::display_hero(hero h)
+{
+  array<int, 2> m_pos = h.get_m_pos();
+  move(m_pos[0],m_pos[1]);
+  attron(COLOR_PAIR(3));
+  addch('@');
+  attroff(COLOR_PAIR(3));
+  refresh();
+}
+
+void displayer::display_ennemi(ennemi e)
+{
+  array<int, 2> m_pos = e.get_m_pos();
+  move(m_pos[0],m_pos[1]);
+  attron(COLOR_PAIR(3));
+  addch('M');
+  attroff(COLOR_PAIR(3));
+  refresh();
+}
+
+/*void displayer::display_potion(potion p)
+{
+  move(p.m_pos[0],p.m_pos[1]);
+  attron(COLOR_PAIR(3));
+  addch('M');
+  attroff(COLOR_PAIR(3));
+  refresh();
+}*/
+
+
+void displayer::remove_hero(hero h)
+{
+  array<int, 2> m_pos = h.get_m_pos();
+  move(m_pos[0],m_pos[1]);
+  attron(COLOR_PAIR(0));
+  addch('.');
+  attroff(COLOR_PAIR(0));
+  refresh();
+}
+
+void displayer::remove_ennemi(ennemi e)
+{
+  array<int, 2> m_pos = e.get_m_pos();
+  move(m_pos[0],m_pos[1]);
+  attron(COLOR_PAIR(0));
+  addch('.');
+  attroff(COLOR_PAIR(0));
+  refresh();
 }
 

@@ -9,6 +9,9 @@ ${mainSources}
 ${srcSources}
 )
 
+find_package(Curses REQUIRED)
+target_link_libraries(meuhjon ${CURSES_LIBRARIES})
+
 target_include_directories(meuhjon PUBLIC
         "${PROJECT_SOURCE_DIR}/include"
         )

@@ -2,6 +2,16 @@
 
 ennemi::ennemi(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos, piece salle)
 {
+void ennemi::placeAlea()
+{
+    
+    int x = rand()%(m_piece.getX2() - m_piece.getX1() - 1) + m_piece.getX1() + 1;
+    int y = rand()%(m_piece.getY2() - m_piece.getY1() - 1) + m_piece.getY1() + 1;
+
+    if ( positionValide(x, y) ) //  Vérification de non superposition avec d'autres entités
+    {
+        m_pos[0] = x; m_pos[1] = y;
+    }
 }
 
 void ennemi::deplacerVersHeros(hero* hero) 
