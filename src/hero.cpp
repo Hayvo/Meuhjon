@@ -1,7 +1,7 @@
 #include "../include/hero.h" 
 
 
-hero::hero(std::array<int, 2> pos)
+hero::hero(std::array<int, 2> pos, plateau bg)
 {
 
 }
