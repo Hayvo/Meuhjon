@@ -10,8 +10,6 @@ std::array<int, 2> personnage::get_m_pos() {
 
 personnage::personnage() { //   Initialisation des attributs
 
-    m_pv = 100;
-    m_force = 5;
     m_pos[0] = 0; m_pos[1] = 0;
     m_mort = false;
 }
@@ -34,14 +32,14 @@ void personnage::recevoir_degats(int degats) {
     }
 }
 
-void personnage::deplacer(std::array<int, 2> dx) {
+void personnage::deplacer(plateau* bg, std::array<int, 2> dx) {
 
     if ( (dx[0] < -1) and (dx[0] > 1) and (dx[1] < -1) and (dx[1] > 1) ) { //   Vérification de la convention
 
         int new_x = m_pos[0] + dx[0]; //  Actualisation coordonnées
         int new_y = m_pos[1] + dx[1];
 
-        if ( true ) { // Si déplacement possible
+        if ( (*bg).getCase(new_x, new_y) != 1 ) { // Si déplacement possible
             m_pos[0] = new_x;
             m_pos[1] = new_y;
         }

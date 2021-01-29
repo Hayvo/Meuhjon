@@ -1,4 +1,5 @@
 #pragma once
+#include "./plateau.h"
 #include <iostream>
 #include <string>
 #include <array>
@@ -17,7 +18,7 @@ public:
 
     void attaquer(personnage* cible);
 
-    void deplacer(std::array<int, 2> dx);
+    void deplacer(plateau* bg, std::array<int, 2> dx);
 
 protected:
 
