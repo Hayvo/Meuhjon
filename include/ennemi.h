@@ -12,10 +12,6 @@ public:
     void placeAlea();
     
     void deplacerVersHeros(hero* heros);
-<<<<<<< HEAD
-=======
-    
->>>>>>> ccaea927f1c6e9a26edda749acd75647c52bbd93
 
 private:
 

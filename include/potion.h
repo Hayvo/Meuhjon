@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "./personnage.h"
+#include "./plateau.h"
 
 class hero;
 
@@ -8,7 +9,7 @@ class potion {
 
 public:
 
-    potion(std::string nom_potion, uint8_t ajout_pv, uint8_t ajout_force);
+    potion(std::string nom_potion, int ajout_pv, int ajout_force, plateau m_bg, piece m_piece);
 
     std::string get_name();
 
@@ -16,8 +17,9 @@ public:
 
 private:
 
-uint8_t m_ajout_pv; //    Points de vie
-uint8_t m_ajout_force; // Puissance personnage
-std::string m_name;
-
+    int m_ajout_pv; //    Points de vie
+    int m_ajout_force; // Puissance personnage
+    std::string m_name;
+    plateau m_bg;
+    piece m_piece;
 };
