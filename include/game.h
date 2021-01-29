@@ -18,9 +18,13 @@ class game {
     void rencontre_ennemi(); // test si il y a un ennemi pas loin et si c'est le cas appelle deplacevershero
     void combat();
 
+    void play();
 
     private:
     std::vector<ennemi> m_ennemis;
     std::vector<potion> m_potions;
+
+
+
 
 };

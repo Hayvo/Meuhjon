@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/dialogue.h
+stdlib.h
+-
+iostream
+-
+
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
+./plateau.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
+./potion.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/potion.h
+./hero.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
+./ennemi.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
+./personnage.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/personnage.h
+
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
 iostream
 -
@@ -15,6 +33,24 @@ iostream
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
 ./plateau.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
+
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/game.h
+iostream
+-
+./personnage.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/personnage.h
+./hero.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
+./ennemi.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
+./display.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/display.h
+./dialogue.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/dialogue.h
+./plateau.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
+./potion.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/potion.h
 
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
 ./personnage.h
@@ -52,9 +88,15 @@ iostream
 ./plateau.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
 
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/ennemi.cpp
-../include/ennemi.h
-/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/ennemi.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/game.cpp
+../include/game.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/game.h
+
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/hero.cpp
+../include/hero.h
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/hero.h
+
+/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/plateau.cpp
 ../include/plateau.h
 /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/include/plateau.h
 

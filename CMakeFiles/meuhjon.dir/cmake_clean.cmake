@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/meuhjon.dir/src/dialogue.cpp.o"
   "CMakeFiles/meuhjon.dir/src/display.cpp.o"
   "CMakeFiles/meuhjon.dir/src/ennemi.cpp.o"
+  "CMakeFiles/meuhjon.dir/src/game.cpp.o"
   "CMakeFiles/meuhjon.dir/src/hero.cpp.o"
   "CMakeFiles/meuhjon.dir/src/personnage.cpp.o"
   "CMakeFiles/meuhjon.dir/src/plateau.cpp.o"

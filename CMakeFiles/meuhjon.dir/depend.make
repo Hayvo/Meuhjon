@@ -27,6 +27,16 @@ CMakeFiles/meuhjon.dir/src/ennemi.cpp.o: include/plateau.h
 CMakeFiles/meuhjon.dir/src/ennemi.cpp.o: include/potion.h
 CMakeFiles/meuhjon.dir/src/ennemi.cpp.o: src/ennemi.cpp
 
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/dialogue.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/display.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/ennemi.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/game.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/hero.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/personnage.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/plateau.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: include/potion.h
+CMakeFiles/meuhjon.dir/src/game.cpp.o: src/game.cpp
+
 CMakeFiles/meuhjon.dir/src/hero.cpp.o: include/hero.h
 CMakeFiles/meuhjon.dir/src/hero.cpp.o: include/personnage.h
 CMakeFiles/meuhjon.dir/src/hero.cpp.o: include/plateau.h

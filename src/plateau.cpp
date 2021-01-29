@@ -26,6 +26,11 @@ void plateau::setCase(int i, int j, int p)
     bg[i][j] = p;
 }
 
+int plateau::getCase(int i, int j)
+{
+    return bg[i][j];
+}
+
 void piece::setX1(int i)
 {
     x1 = i;

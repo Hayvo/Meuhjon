@@ -1,3 +1,5 @@
+#pragma once 
+
 #include <iostream>
 #include "./personnage.h"
 #include "./hero.h"
@@ -5,6 +7,8 @@
 
 class ennemi : public personnage {
 
+private:
+    piece m_piece;
 public:
     ennemi(int pv, int force, std::array<int, 2> pos, plateau bg, piece salle) : personnage(pv,force,pos,bg), m_piece(salle){};
 
@@ -12,6 +16,4 @@ public:
     
     void deplacerVersHeros(hero* heros);
 
-private:
-    piece m_piece;
 };

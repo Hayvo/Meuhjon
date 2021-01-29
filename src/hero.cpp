@@ -1,10 +1,7 @@
 #include "../include/hero.h" 
 
 
-hero::hero(std::array<int, 2> pos, plateau bg)
-{
 
-}
 
 void hero::ajoute_potion(potion potion)
 {
@@ -18,6 +15,8 @@ std::string hero::afficher_inventaire()
         inv += m_inventaire[i].get_name() ;
         inv += ", " ;
     }
+
+    return inv;
 }
 
 void hero::choisir_inventaire(std::string name)

@@ -253,6 +253,33 @@ src/ennemi.cpp.s:
 	$(MAKE) -f CMakeFiles/meuhjon.dir/build.make CMakeFiles/meuhjon.dir/src/ennemi.cpp.s
 .PHONY : src/ennemi.cpp.s
 
+src/game.o: src/game.cpp.o
+
+.PHONY : src/game.o
+
+# target to build an object file
+src/game.cpp.o:
+	$(MAKE) -f CMakeFiles/meuhjon.dir/build.make CMakeFiles/meuhjon.dir/src/game.cpp.o
+.PHONY : src/game.cpp.o
+
+src/game.i: src/game.cpp.i
+
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.cpp.i:
+	$(MAKE) -f CMakeFiles/meuhjon.dir/build.make CMakeFiles/meuhjon.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
+
+src/game.s: src/game.cpp.s
+
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.cpp.s:
+	$(MAKE) -f CMakeFiles/meuhjon.dir/build.make CMakeFiles/meuhjon.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
+
 src/hero.o: src/hero.cpp.o
 
 .PHONY : src/hero.o
@@ -384,6 +411,9 @@ help:
 	@echo "... src/ennemi.o"
 	@echo "... src/ennemi.i"
 	@echo "... src/ennemi.s"
+	@echo "... src/game.o"
+	@echo "... src/game.i"
+	@echo "... src/game.s"
 	@echo "... src/hero.o"
 	@echo "... src/hero.i"
 	@echo "... src/hero.s"

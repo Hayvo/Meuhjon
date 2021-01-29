@@ -109,9 +109,22 @@ CMakeFiles/meuhjon.dir/src/ennemi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/meuhjon.dir/src/ennemi.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/ennemi.cpp -o CMakeFiles/meuhjon.dir/src/ennemi.cpp.s
 
+CMakeFiles/meuhjon.dir/src/game.cpp.o: CMakeFiles/meuhjon.dir/flags.make
+CMakeFiles/meuhjon.dir/src/game.cpp.o: src/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/meuhjon.dir/src/game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/meuhjon.dir/src/game.cpp.o -c /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/game.cpp
+
+CMakeFiles/meuhjon.dir/src/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/meuhjon.dir/src/game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/game.cpp > CMakeFiles/meuhjon.dir/src/game.cpp.i
+
+CMakeFiles/meuhjon.dir/src/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/meuhjon.dir/src/game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/game.cpp -o CMakeFiles/meuhjon.dir/src/game.cpp.s
+
 CMakeFiles/meuhjon.dir/src/hero.cpp.o: CMakeFiles/meuhjon.dir/flags.make
 CMakeFiles/meuhjon.dir/src/hero.cpp.o: src/hero.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/meuhjon.dir/src/hero.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/meuhjon.dir/src/hero.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/meuhjon.dir/src/hero.cpp.o -c /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/hero.cpp
 
 CMakeFiles/meuhjon.dir/src/hero.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/meuhjon.dir/src/hero.cpp.s: cmake_force
 
 CMakeFiles/meuhjon.dir/src/personnage.cpp.o: CMakeFiles/meuhjon.dir/flags.make
 CMakeFiles/meuhjon.dir/src/personnage.cpp.o: src/personnage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/meuhjon.dir/src/personnage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/meuhjon.dir/src/personnage.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/meuhjon.dir/src/personnage.cpp.o -c /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/personnage.cpp
 
 CMakeFiles/meuhjon.dir/src/personnage.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/meuhjon.dir/src/personnage.cpp.s: cmake_force
 
 CMakeFiles/meuhjon.dir/src/plateau.cpp.o: CMakeFiles/meuhjon.dir/flags.make
 CMakeFiles/meuhjon.dir/src/plateau.cpp.o: src/plateau.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/meuhjon.dir/src/plateau.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/meuhjon.dir/src/plateau.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/meuhjon.dir/src/plateau.cpp.o -c /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/plateau.cpp
 
 CMakeFiles/meuhjon.dir/src/plateau.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/meuhjon.dir/src/plateau.cpp.s: cmake_force
 
 CMakeFiles/meuhjon.dir/src/potion.cpp.o: CMakeFiles/meuhjon.dir/flags.make
 CMakeFiles/meuhjon.dir/src/potion.cpp.o: src/potion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/meuhjon.dir/src/potion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/meuhjon.dir/src/potion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/meuhjon.dir/src/potion.cpp.o -c /mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/src/potion.cpp
 
 CMakeFiles/meuhjon.dir/src/potion.cpp.i: cmake_force
@@ -167,6 +180,7 @@ meuhjon_OBJECTS = \
 "CMakeFiles/meuhjon.dir/src/dialogue.cpp.o" \
 "CMakeFiles/meuhjon.dir/src/display.cpp.o" \
 "CMakeFiles/meuhjon.dir/src/ennemi.cpp.o" \
+"CMakeFiles/meuhjon.dir/src/game.cpp.o" \
 "CMakeFiles/meuhjon.dir/src/hero.cpp.o" \
 "CMakeFiles/meuhjon.dir/src/personnage.cpp.o" \
 "CMakeFiles/meuhjon.dir/src/plateau.cpp.o" \
@@ -179,6 +193,7 @@ meuhjon: CMakeFiles/meuhjon.dir/main.cpp.o
 meuhjon: CMakeFiles/meuhjon.dir/src/dialogue.cpp.o
 meuhjon: CMakeFiles/meuhjon.dir/src/display.cpp.o
 meuhjon: CMakeFiles/meuhjon.dir/src/ennemi.cpp.o
+meuhjon: CMakeFiles/meuhjon.dir/src/game.cpp.o
 meuhjon: CMakeFiles/meuhjon.dir/src/hero.cpp.o
 meuhjon: CMakeFiles/meuhjon.dir/src/personnage.cpp.o
 meuhjon: CMakeFiles/meuhjon.dir/src/plateau.cpp.o
@@ -187,7 +202,7 @@ meuhjon: CMakeFiles/meuhjon.dir/build.make
 meuhjon: /usr/lib/x86_64-linux-gnu/libcurses.so
 meuhjon: /usr/lib/x86_64-linux-gnu/libform.so
 meuhjon: CMakeFiles/meuhjon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable meuhjon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/pierr/Desktop/MinesParisTech/UE-12/Meuhjon/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable meuhjon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/meuhjon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
