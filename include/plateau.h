@@ -15,7 +15,7 @@ class plateau
 
 
     public:
-        int bg[20][20];
+        int bg[20][20] = {0};
         int getNx();
         int getNy();
 
@@ -27,7 +27,7 @@ class plateau
 
 class piece
 {
-    private:
+    protected:
         int x1;
         int x2;
         int y1;
@@ -38,6 +38,16 @@ class piece
         void setX2(int i);
         void setY1(int i);
         void setY2(int i);
+
+        int getX1();
+        int getX2();
+        int getY1();
+        int getY2();
 };
 
 
+class couloir : public piece
+{
+   private:
+        char type;
+};

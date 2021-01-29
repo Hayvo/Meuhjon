@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
+
+using namespace std;
 
 class personnage {
 
@@ -15,6 +18,8 @@ public:
     void recevoir_degats(int degats);
 
     void attaquer (personnage* cible);
+
+    void deplacer(std::vector<int> dx);
 
 protected:
 
