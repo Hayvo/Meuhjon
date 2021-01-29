@@ -7,7 +7,7 @@ class personnage {
 
 public:
 
-    personnage();
+    personnage(std::string nom_perso, uint8_t pv, uint8_t force, std::array<int, 2> pos);
 
     bool get_m_mort();
 
@@ -29,5 +29,6 @@ uint8_t m_pv; //    Points de vie
 uint8_t m_force; // Puissance personnage     
 std::array<int, 2> m_pos;  //     Position
 bool m_mort; //    Vivant ou mort
+std::string m_name;
 
 };
